@@ -11,7 +11,7 @@ connectDB();
 app.use(express.json({extened: false }))
 app.get('/', (req, res) => res.send('API Running'))
 
-const PORT = process.env.PORT || 1234
+const PORT = process.env.PORT || 5500
 
 //Define Routes
 app.use('/api/users', require('./routes/api/users'))
