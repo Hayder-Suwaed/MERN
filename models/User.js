@@ -1,4 +1,8 @@
 const mongoose = require("mongoose");
+<<<<<<< HEAD
+=======
+
+>>>>>>> origin/postcomment
 const UserSchema = new mongoose.Schema({
   name: {
     type: String,
