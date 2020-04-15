@@ -8,7 +8,7 @@ import {
   LOGIN_SUCCESS,
   LOGIN_FAIL,
   LOGOUT,
-  CLEAR_PROFILE
+  CLEAR_PROFILE,
 } from "./types";
 import setAuthToken from "../utils/setAuthToken";
 
@@ -33,7 +33,7 @@ export const loadUser = () => async (dispatch) => {
 };
 
 //Register User
- export const register = ({ name, email, password }) => async (dispatch) => {
+export const register = ({ name, email, password }) => async (dispatch) => {
   const config = {
     headers: {
       "Content-Type": "application/json",
@@ -49,8 +49,7 @@ export const loadUser = () => async (dispatch) => {
       type: REGISTER_SUCCESS,
       payload: res.data,
     });
-    dispatch(loadUser())
-
+    dispatch(loadUser());
   } catch (err) {
     const errors = err.response.data.errors;
 
@@ -63,9 +62,8 @@ export const loadUser = () => async (dispatch) => {
   }
 };
 
-
 // Login User
-export const login = ( email, password ) => async (dispatch) => {
+export const login = (email, password) => async (dispatch) => {
   const config = {
     headers: {
       "Content-Type": "application/json",
@@ -82,7 +80,7 @@ export const login = ( email, password ) => async (dispatch) => {
       payload: res.data,
     });
 
-    dispatch(loadUser())
+    dispatch(loadUser());
   } catch (err) {
     const errors = err.response.data.errors;
 
@@ -95,10 +93,8 @@ export const login = ( email, password ) => async (dispatch) => {
   }
 };
 
-
 // Logout / Clear Profile
-export const logout = () => dispatch => {
-  dispatch({ type: CLEAR_PROFILE })
-  dispatch({ type: LOGOUT })
-
-}
+export const logout = () => (dispatch) => {
+  dispatch({ type: CLEAR_PROFILE });
+  dispatch({ type: LOGOUT });
+};
