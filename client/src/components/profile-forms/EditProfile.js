@@ -250,13 +250,10 @@ EditProfile.propTypes = {
   profile: PropTypes.object.isRequired,
 };
 
-
 const mapStateToProps = (state) => ({
-    profile: state.profile,
-  });;
+  profile: state.profile,
+});
 
-export default connect(
-    mapStateToProps,
- { createProfile, getCurrentProfile }
- )(withRouter(EditProfile)
+export default connect(mapStateToProps, { createProfile, getCurrentProfile })(
+  withRouter(EditProfile)
 );
