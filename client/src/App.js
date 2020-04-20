@@ -7,8 +7,8 @@ import Register from "./components/auth/Register";
 import Alert from "./components/layout/alert";
 import { loadUser } from "./actions/auth";
 import setAuthToken from "./utils/setAuthToken";
-import Dashboard from './components/dashboard/Dashboard'
-import PrivateRoute from './components/routing/PrivateRoute'
+import Dashboard from "./components/dashboard/Dashboard";
+import PrivateRoute from "./components/routing/PrivateRoute";
 
 // Redux
 import { Provider } from "react-redux";
