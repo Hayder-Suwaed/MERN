@@ -1,4 +1,4 @@
-# DevConnector 2.0
+# MERN (devconnector app)
 
 > Social network for developers
 
@@ -119,6 +119,26 @@ You can see the use here in [routes/api/profile.js](https://github.com/bradtrave
 
 There is an unresolved [issue](https://github.com/emerleite/node-gravatar/issues/47) with the [node-gravatar](https://github.com/emerleite/node-gravatar#readme) package, whereby the url is not valid. Fortunately we added normalize-url so we can use that to easily fix the issue. If you're not seeing Gravatar avatars showing in your app then most likely you need to implement this change.
 You can see the code use here in [routes/api/users.js](https://github.com/bradtraversy/devconnector_2.0/blob/master/routes/api/users.js#L44)
+
+## Final Product
+
+Register Page:
+!["RegisterPage"](https://github.com/Hayder-Suwaed/MERN/blob/master/images/register-page.png)
+
+Login Page:
+!["Login Page"](https://github.com/Hayder-Suwaed/MERN/blob/master/images/login-page.png)
+
+Dashboard Page:
+!["Dasboard Page"](https://github.com/Hayder-Suwaed/MERN/blob/master/images/dashboard-page.png)
+
+Posts Page:
+!["Posts Page"](https://github.com/Hayder-Suwaed/MERN/blob/master/images/posts-page.png)
+
+Developers Page:
+!["Developers Page"](https://github.com/Hayder-Suwaed/MERN/blob/master/images/developers-page.png)
+
+Developers-Profile Page:
+!["Developers-Profile Page"](https://github.com/Hayder-Suwaed/MERN/blob/master/images/deveoper-profile-page.png)
 
 ## Redux subscription to manage local storage
 
@@ -261,7 +281,7 @@ Once merged you can push to heroku as above and your site will rebuild and be up
 ### Author
 
 Brad Traversy
-[Traversy Media](http://www.traversymedia.com)
+[Hayder Suwaed]
 
 ### Version
 
